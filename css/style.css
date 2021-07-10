@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Lato&family=Playfair+Display&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.navbar--wrap {
+  flex-flow: wrap;
+}
+
+.navbar__home {
+  flex-grow: 1;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Playfair Display';
+}
+
+.navbar__menubtn {
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+  margin-right: 1rem;
+  margin: 0 1rem 0 0.5rem
+}
+
+.navbar__options {
+  display: none;
+}
+
+.options--show {
+  display: flex;
+  width: 100%;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  flex-grow: 1;
+  padding-left: 0;
+}
+
+.navbar__item {
+  flex-grow: 1;
+  text-align: center;
+  padding: 1rem 0;
+  color: black;
+}
+
+.navbar__item:hover {
+  color: coral;
+}
+
+.active {
+  border-top: solid;
+  border-bottom: solid;
+  border-color: coral;
+  border-width: thin;
+}
+
+.navbar__item a {
+  color: inherit;
+}
+
+.navbar__home, .navbar__item a {
+  text-decoration: none;
+}
+
+.navbar--md {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+main {
+ margin-bottom: 2rem;
+}
+
+/* Introduction section */
+.intro {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/bread-sm.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.intro__title {
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+.intro__description {
+  color: white;
+}
+
+/* Mission section */
+.mission {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.mission img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.mission__descriptions {
+  max-width: 100%;
+  padding: 2rem;
+}
+
+.mission__sign {
+  font-family: 'Fuggles', cursive;
+  font-size: xx-large;
+}
+
+/* Product section */
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.products__description {
+  max-width: 100%;
+  padding: 2rem;
+}
+
+.products__menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 2rem;
+  background: url("../img/bread-display-sm.jpg");
+  background-attachment: fixed;
+  background-size: 800px;
+}
+
+.products__menuouter {
+  background: linear-gradient(217deg, #ff9800, rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, #b2dfdb, rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, #e65100, rgba(0,0,255,0) 70.71%);
+  background-position: center;
+  background-size: 15rem;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: transparent;
+  width: 10rem;
+  height: 10rem;
+}
+
+.products__menuinner {
+  background-color: white;
+  opacity: 0.7;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: transparent;
+  width: 8rem;
+  height: 8rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products__menubtn {
+  text-decoration: none;
+  color: black;
+}
+
+/* MENU PAGE */
+.menu {
+  height: 17vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/bread-display-sm.jpg");
+  background-size: contain;
+  background-position: 50% -4%;
+  background-attachment: fixed;
+}
+
+.menu__title {
+  text-align: center;
+  font-size: 4rem;
+  background-color: rgb(255 255 255 / 45%);
+  padding: 0 2rem;
+}
+
+.breads {
+  margin: 2rem;
+}
+
+.bread__title {
+  padding-top: 2rem;
+  color: coral;
+}
+
+.bread__name {
+  display: flex;
+}
+
+.dots {
+  flex-grow: 1;
+  border-bottom: dashed;
+  border-color: gray;
+  border-width: thin;
+}
+
+.bread__description {
+  margin-top: 0.2rem;
+  line-height: 1.25em;
+}
+
+footer {
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.info, .address, .hours, .contact, .follow {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.follow a {
+  margin-right: 0.7rem;
+}
+
+.twitter, .facebook {
+  color: coral;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-flow: nowrap;
+  }
+
+  .navbar__menubtn {
+    display: none;
+  }
+
+  .navbar__options {
+    display: flex;
+    flex-grow: 1;
+    width: initial;
+  }
+
+  .intro {
+    background: url("../img/bread-md.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .mission {
+    flex-wrap: nowrap;
+  }
+
+  .mission img {
+    width: 50rem;
+  }
+
+  .mission__descriptions {
+    max-width: 40%;
+  }
+
+  .products {
+    flex-wrap: nowrap;
+  }
+
+  .products__description {
+    max-width: 40%;
+  }
+
+  .products__menu {
+    max-width: 40%;
+    padding: 0 2rem;
+    background: url("../img/bread-display-md.jpg");
+    background-attachment: fixed;
+    background-size: 800px;
+  }
+
+  .menu {
+    height: 24vh;
+    background: url("../img/bread-display-md.jpg");
+    background-size: contain;
+    background-position: 50% -4%;
+    background-attachment: fixed;
+  }
+
+  .info {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mission__descriptions {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .products__description {
+    max-width: 50%;
+  }
+
+  .menu {
+    height: 32vh;
+  }
+}
