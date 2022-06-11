@@ -1,3 +1,4 @@
-# Loafy Bread
+# Live site at https://jessef10.github.io/bakery-site/
 
-## Live site at https://jessef10.github.io/fruit-cards/
+## Tims' Bake n Bake
+Welcome to this bakery website, explore the menu to learn more.
